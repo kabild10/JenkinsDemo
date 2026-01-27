@@ -1,19 +1,56 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CI/CD Demo</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-<title>Simple CI/CD Demo</title>
+    body {
+      background: linear-gradient(135deg, #6C63FF, #00BFA6);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
+    .container {
+      background: #ffffffcc; /* Slightly transparent white */
+      padding: 2.5rem 3rem;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      max-width: 500px;
+      transition: transform 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-5px);
+    }
+
+    h1 {
+      color: #333;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #555;
+      font-size: 1.1rem;
+    }
+  </style>
 </head>
-
 <body>
-
-<h1>Hello from Jenkins CI/CD pipeline </h1>
-
-<p>If you see this, pipeline worked!!!</p>
-
+  <div class="container">
+    <h1>Hello from Jenkins CI/CD Pipeline</h1>
+    <p>If you see this, the pipeline worked successfully!</p>
+  </div>
 </body>
-
 </html>
