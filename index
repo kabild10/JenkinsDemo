@@ -78,7 +78,7 @@
 
 <body>
   <div class="card">
-    <h1>🚀 CI/CD Pipeline Success</h1>
+    <h1>🚀 CI/CD Pipeline Successfull</h1>
     <p>Your Jenkins pipeline executed and deployed this page successfully.</p>
     <div class="badge">BUILD SUCCESS</div>
     <footer>
