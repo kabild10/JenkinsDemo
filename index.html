@@ -1,10 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Jenkins CI/CD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jenkins CI/CD Deployment</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Sections */
+section {
+    padding: 60px 10%;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card h3 {
+    color: #22d3ee;
+    margin-bottom: 10px;
+}
+
+/* Flow */
+.flow {
+    background: #020617;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.flow ol {
+    padding-left: 20px;
+}
+
+.flow li {
+    margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    section {
+        padding: 40px 6%;
+    }
+}
+</style>
 </head>
+
 <body>
-    <h1>CI/CD Working Successfully 🚀</h1>
-    <p>Deployed using Jenkins</p>
+
+<!-- HEADER -->
+<header>
+    <h1>🚀 Jenkins CI/CD Pipeline</h1>
+    <p>Automated Deployment using Jenkins, Ansible & AWS EC2</p>
+</header>
+
+<!-- ABOUT -->
+<section>
+    <h2 class="section-title">📌 About This Project</h2>
+    <p>
+        This project demonstrates a real-world CI/CD pipeline where source code is
+        automatically pulled from GitHub, built and deployed to a remote EC2 server
+        using Jenkins and Ansible.
+    </p>
+</section>
+
+<!-- FEATURES -->
+<section>
+    <h2 class="section-title">✨ Key Features</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Automated Builds</h3>
+            <p>Every GitHub commit triggers Jenkins automatically.</p>
+        </div>
+        <div class="card">
+            <h3>Ansible Deployment</h3>
+            <p>Code is deployed to target EC2 using Ansible playbooks.</p>
+        </div>
+        <div class="card">
+            <h3>Cloud Ready</h3>
+            <p>Runs on AWS EC2 with secure SSH-based automation.</p>
+        </div>
+        <div class="card">
+            <h3>Zero Downtime</h3>
+            <p>Fast and reliable deployment without manual intervention.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CI/CD FLOW -->
+<section>
+    <h2 class="section-title">🔁 CI/CD Flow</h2>
+    <div class="flow">
+        <ol>
+            <li>Developer pushes code to GitHub</li>
+            <li>GitHub triggers Jenkins pipeline</li>
+            <li>Jenkins pulls latest source code</li>
+            <li>Ansible connects to Web EC2</li>
+            <li>Nginx serves the updated website</li>
+        </ol>
+    </div>
+</section>
+
+<!-- TECH STACK -->
+<section>
+    <h2 class="section-title">🛠 Technology Stack</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Jenkins</h3>
+            <p>CI/CD automation server</p>
+        </div>
+        <div class="card">
+            <h3>Ansible</h3>
+            <p>Configuration management & deployment</p>
+        </div>
+        <div class="card">
+            <h3>AWS EC2</h3>
+            <p>Cloud infrastructure</p>
+        </div>
+        <div class="card">
+            <h3>Nginx</h3>
+            <p>Web server for hosting content</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Jenkins CI/CD Demo | Built for DevOps Practice</p>
+</footer>
+
 </body>
 </html>
